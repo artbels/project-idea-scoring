@@ -33,7 +33,7 @@ var chartData = {
     'Recurring', 'GEO', 'Problem', 'Product', 'MVP', 'Community access'],
   datasets: [{
     label: '',
-        // backgroundColor: utils.transparentize(presets.red),
+    backgroundColor: Chart.helpers.color('rgb(255, 99, 132)').alpha(0.5).rgbString(),
     borderColor: 'rgb(255, 99, 132)',
     data: [0, 0, 0, 0, 0, 0, 0, 0, 0]
   }]

@@ -52,7 +52,7 @@ var myRadarChart = new Chart('myChart', {
 
 HH.draw(data, htParams)
 
-function afterSelectionByProp (r, p, r2, p2) {
+function afterSelectionByProp (r) {
   chartRow = r
   updateChart()
 }
@@ -65,7 +65,7 @@ function getValuesRow (row) {
   return values
 }
 
-function updateChart() {
+function updateChart () {
   var row = htParams.instance.getDataAtRow(chartRow)
   var values = getValuesRow(row)
 
@@ -106,7 +106,6 @@ function linkRenderer (instance, td, row, col, prop, value) {
       e.preventDefault() // prevent selection quirk
     })
   }
-
   return td
 }
 
